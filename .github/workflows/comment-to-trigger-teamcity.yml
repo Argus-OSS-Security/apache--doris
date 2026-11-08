@@ -17,10 +17,11 @@
 
 name: Comment to trigger teamcity
 
-on:
-  issue_comment:
-    types: [created, edited]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     types: [created, edited]
+# 
 permissions:
   contents: read
   pull-requests: write

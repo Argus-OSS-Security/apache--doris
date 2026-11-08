@@ -1,34 +1,35 @@
 name: Code Review Runner
 
-on:
-  issue_comment:
-    types: [created]
-  workflow_dispatch:
-    inputs:
-      runtime_canary:
-        description: Test the staged Codex package without submitting a review.
-        required: false
-        type: boolean
-        default: false
-      pr_number:
-        required: false
-        type: string
-      head_sha:
-        required: false
-        type: string
-      base_sha:
-        required: false
-        type: string
-      review_focus:
-        required: false
-        type: string
-        default: ''
-      manage_status:
-        description: Update the code-review commit status from this run.
-        required: false
-        type: boolean
-        default: true
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     types: [created]
+#   workflow_dispatch:
+#     inputs:
+#       runtime_canary:
+#         description: Test the staged Codex package without submitting a review.
+#         required: false
+#         type: boolean
+#         default: false
+#       pr_number:
+#         required: false
+#         type: string
+#       head_sha:
+#         required: false
+#         type: string
+#       base_sha:
+#         required: false
+#         type: string
+#       review_focus:
+#         required: false
+#         type: string
+#         default: ''
+#       manage_status:
+#         description: Update the code-review commit status from this run.
+#         required: false
+#         type: boolean
+#         default: true
+# 
 permissions:
   statuses: write
   pull-requests: write

@@ -1,13 +1,14 @@
 name: Aggregate Code Review Status
 
-on:
-  workflow_call:
-    inputs:
-      head_sha:
-        description: Commit whose PR/base-specific review sources should be aggregated.
-        required: true
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+#     inputs:
+#       head_sha:
+#         description: Commit whose PR/base-specific review sources should be aggregated.
+#         required: true
+#         type: string
+# 
 permissions: {}
 
 jobs:

@@ -18,12 +18,13 @@
 ---
 name: 'Check Large File'
 
-on:
-  push:
-    branches:
-      - master
-  pull_request_target:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#   pull_request_target:
+# 
 permissions:
   contents: read
   pull-requests: write

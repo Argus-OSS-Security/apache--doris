@@ -18,9 +18,10 @@
 ---
 name: FE Web UI
 
-on:
-  pull_request:
-  workflow_dispatch:
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   workflow_dispatch:
 concurrency:
   group: ${{ github.ref }} (FE Web UI)
   cancel-in-progress: true

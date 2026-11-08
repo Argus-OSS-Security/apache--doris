@@ -17,10 +17,11 @@
 
 name: Build Third Party Libraries
 
-on:
-  pull_request:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   workflow_dispatch:
+# 
 concurrency:
   group: ${{ github.ref }} (Build Third Party Libraries)
   cancel-in-progress: true
